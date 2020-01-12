@@ -38,7 +38,7 @@ class Pokemon
     sql = "SELECT * FROM pokemon WHERE id = ?"
     result = db.execute(sql, id)[0]
 
-    result_name: result[0]
+    result[name:] = result[0]
 
     binding.pry
 
