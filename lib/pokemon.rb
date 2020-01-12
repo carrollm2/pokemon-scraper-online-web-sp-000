@@ -2,8 +2,8 @@ require_relative "../bin/environment.rb"
 
 class Pokemon
 
-  attr_accessor :name, :db, :type, :id
-  # attr_reader :id
+  attr_accessor :name, :db, :type
+  attr_reader :id
 
   def initialize(id: nil, name:, type:, db:)
     @id = id
