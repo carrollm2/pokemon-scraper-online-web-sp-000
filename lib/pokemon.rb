@@ -39,11 +39,10 @@ class Pokemon
     result = db.execute(sql, id)[0]
 
     results = {id: result[0], name: result[1], type: result[2]}
-    results[name] = result[0]
 
     binding.pry
 
-    Pokemon.new(result[0], result[1], result[2], db)
+    Pokemon.new(results[:id], results[:name], results[:type], db)
   end
 
 end
