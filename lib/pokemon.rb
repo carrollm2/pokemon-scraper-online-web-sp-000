@@ -37,8 +37,6 @@ class Pokemon
     sql = "SELECT * FROM pokemon WHERE id = ?"
     result = db.execute(sql, id)[0]
 
-    binding.pry
-
     Pokemon.new_from_db(result)
     # Pokemon.new(result[0], result[1], result[2])
   end
