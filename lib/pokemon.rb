@@ -13,18 +13,18 @@ class Pokemon
   end
 
 
-  def self.create(name, type, db)
-    pokemon = Pokemon.new(name, type, db)
-    pokemon.save
-    pokemon
-  end
-
-
-  def self.new_from_db(row)
-    # new_pokemon = self.new(row[0], row[1], row[2], row[3])
-    new_pokemon = self.new(row[0], row[1], row[2])
-    new_pokemon  # return the newly created instance
-  end
+  # def self.create(name, type, db)
+  #   pokemon = Pokemon.new(name, type, db)
+  #   pokemon.save
+  #   pokemon
+  # end
+  #
+  #
+  # def self.new_from_db(row)
+  #   # new_pokemon = self.new(row[0], row[1], row[2], row[3])
+  #   new_pokemon = self.new(row[0], row[1], row[2])
+  #   new_pokemon  # return the newly created instance
+  # end
 
 
   def self.save(name, type, db)
