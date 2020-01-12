@@ -40,7 +40,7 @@ class Pokemon
 
     results = {id: result[0], name: result[1], type: result[2]}
 
-    Pokemon.new(results[:id], results[:name], results[:type], db)
+    Pokemon.new(results[:id], results[:name], results[:type])
   end
 
 end
