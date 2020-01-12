@@ -39,7 +39,8 @@ class Pokemon
 
     binding.pry
 
-    Pokemon.new(result[0], result[1], result[2])
+    Pokemon.new_from_db(result)
+    # Pokemon.new(result[0], result[1], result[2])
   end
 
 end
